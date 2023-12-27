@@ -320,3 +320,7 @@ $x(‘//*[contains(text(), “textoexemplo”]’)
 
 
 Fonte: Iterasys Live com: [Danilo Arantes Freitas](https://www.youtube.com/watch?v=ZSAglCvKy9g&ab_channel=Iterasys)
+
+### Agradecimentos:
+
+> Gostaria de agradecer ao meu amigo Sandro Augusto por me ajudar nesse projeto  [Linkedin](linkedin.com/in/sandro-augusto-774a6a140)
