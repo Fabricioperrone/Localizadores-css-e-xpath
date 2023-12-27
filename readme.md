@@ -106,5 +106,32 @@ Exemplo com _Xpath_:
 ![image](https://github.com/Fabricioperrone/Localizadores-css-e-xpath/assets/69866913/3f74fc64-1b05-49e3-94a7-a5dbf14e4940)
 
 
+# Principais maneiras de testar localizadores DOCUMENT
 
+Query Seletor:
+```
+document.querySelectorAll(‘cssSelector’);
+```
+Com uso de classe:
+
+![image](https://github.com/Fabricioperrone/Localizadores-css-e-xpath/assets/69866913/54658c6b-cad8-444b-901e-b141ff7d5c4a)
+
+Com uso de ID:
+
+![image](https://github.com/Fabricioperrone/Localizadores-css-e-xpath/assets/69866913/ad34254e-c1c6-424d-bd29-61a49b4f94fb)
+
+
+Get element:
+```
+document.getElementsByClassName(‘nomeClasse’);
+```
+
+![image](https://github.com/Fabricioperrone/Localizadores-css-e-xpath/assets/69866913/aceefa85-907d-45a6-8f3e-b50cd80baaa3)
+
+### _Xpaths_
+
+```
+document.evaluate('XPATH HERE', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+```
+![image](https://github.com/Fabricioperrone/Localizadores-css-e-xpath/assets/69866913/4440e6b4-8e89-414d-b268-ac4cab126979)
 
