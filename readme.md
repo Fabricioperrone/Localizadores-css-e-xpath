@@ -308,12 +308,12 @@ $x(‘//*[contains(text(), “textoexemplo”]’)
 | Um elemento                          | p                                    | //p                                              |
 | Caminho absoluto                     | html > body > title                  | /html/body/title                                 |
 | Query com atributo                   | Input[placeholder=”Search”]          | //input[@placeholder, “Search”]                  |
-| Query com parte de atributo          | Input[placeholder*=”Sea”]           | //input[contains(@placeholder, “Sear”)]          |
+| Query com parte de atributo          | Input[placeholder*=”Sea”]            | //input[contains(@placeholder, “Sear”)]           |
 | Filhos do elemento                   | Form input:first-child               | //form/input[1]                                  |
 |                                      | Form input:nth-child(4)              | //form/input[4]                                  |
 |                                      | Form input:first-child               | //form/input[1]                                  |
-| Classe e id                          | .sear_query                          | //*[@class=”search_query form-control ac_input”]  |
-|                                      | #search_query_top                    | //*[@id=”search_query_top”]                       |
-|                                      |                                      | //*[contains(@class, “search_query”)]             |
+| Classe e id                          | .sear_query                          | //*[@class=”search_query form-control ac_input”] |
+|                                      | #search_query_top                    | //*[@id=”search_query_top”]                      |
+|                                      |                                      | //*[contains(@class, “search_query”)]            |
 | Elemento pelo seu texto              |                                      | //*[text()=”Come Visit Us”]                      |
 |                                      |                                      | //*[contains(text(), “Nort Carolina”)]           |
