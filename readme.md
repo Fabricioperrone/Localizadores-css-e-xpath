@@ -240,3 +240,80 @@ $x('//input[contains(@placeholder,"Sea")]')
 ```
 
 ![image](https://github.com/Fabricioperrone/Localizadores-css-e-xpath/assets/69866913/9544075b-0ae5-4629-a72a-d787a2bb4e83)
+
+
+### Quando não temos nenhum tipo de atributo:
+
+![image](https://github.com/Fabricioperrone/Localizadores-css-e-xpath/assets/69866913/ed2ce742-0554-4a0a-a93e-92294ed8d78d)
+
+Comando:
+```
+$('form input:nth-child(4)')
+```
+Explicando o comando:
+
+Nesse exemplo criamos um seletor sem usar id, class, name, placeholder. Somente utilizando elementos HTML.
+
+![image](https://github.com/Fabricioperrone/Localizadores-css-e-xpath/assets/69866913/50bb4ef2-d403-4cf6-9ab5-f289e0f71e48)
+
+Agora vamos fazer o mesmo com _Xpath_:
+
+Comando: 
+```
+$x('//form//input[4]')
+```
+![image](https://github.com/Fabricioperrone/Localizadores-css-e-xpath/assets/69866913/1812573c-94a4-4a94-95cf-f344c4b128c0)
+
+
+Pesquisando o primeiro elemento:
+
+Comando:
+```
+$x('//form//input[1]')
+``` 
+![image](https://github.com/Fabricioperrone/Localizadores-css-e-xpath/assets/69866913/585b0099-a3bd-49f7-8c67-3a2c165bd165)
+
+Buscando o _last_:
+
+Comando:
+```
+$x('//form//input[last()]')
+```
+![image](https://github.com/Fabricioperrone/Localizadores-css-e-xpath/assets/69866913/16075779-b211-424a-886d-49828300256b)
+
+Obs: nesse exemplo podemos ver que ele trouxe dois resultados, então não seria confiável, sempre busque por um elemento único.
+
+Selecionando elemento pelo texto:
+
+Comando: 
+```
+$x(‘//*[text()=”Lorem Ipsum”]’)
+```
+![image](https://github.com/Fabricioperrone/Localizadores-css-e-xpath/assets/69866913/5bf56079-950b-4585-b4d1-f8bce7d0ae76)
+
+Usando "_contains_" junto com 	"_text_":
+
+Comando: 
+```
+$x(‘//*[contains(text(), “textoexemplo”]’)
+```
+![image](https://github.com/Fabricioperrone/Localizadores-css-e-xpath/assets/69866913/0b13aad7-f682-4008-8056-7386ac21e537)
+
+
+# Tabela de localizadores
+
+| Nome                                 | CSS                                  | XPATH                                            |
+|--------------------------------------|--------------------------------------|--------------------------------------------------|
+| Todos os elementos                   | *                                    | //*                                              |
+| Um elemento                          | p                                    | //p                                              |
+| Caminho absoluto                     | html > body > title                  | /html/body/title                                 |
+| Query com atributo                   | Input[placeholder=”Search”]          | //input[@placeholder, “Search”]                  |
+| Query com parte de atributo          | Input[placeholder*=”Sea”]           | //input[contains(@placeholder, “Sear”)]          |
+| Filhos do elemento                   | Form input:first-child               | //form/input[1]                                  |
+|                                      | Form input:nth-child(4)              | //form/input[4]                                  |
+|                                      | Form input:first-child               | //form/input[1]                                  |
+| Classe e id                          | .sear_query                          | //*[@class=”search_query form-control ac_input”]  |
+|                                      | #search_query_top                    | //*[@id=”search_query_top”]                       |
+|                                      |                                      | //*[contains(@class, “search_query”)]             |
+| Elemento pelo seu texto              |                                      | //*[text()=”Come Visit Us”]                      |
+|                                      |                                      | //*[contains(text(), “Nort Carolina”)]           |
