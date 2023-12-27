@@ -159,3 +159,19 @@ $('*')
 ![image](https://github.com/Fabricioperrone/Localizadores-css-e-xpath/assets/69866913/28355f22-4749-47c3-8093-20e0d1ba8068)
 
 
+Caso queira fazer o mesmo com Xpath:
+Comando:
+```
+//*
+```
+![image](https://github.com/Fabricioperrone/Localizadores-css-e-xpath/assets/69866913/67acffc4-7169-4bf3-a15c-c4f941007042)
+
+Selecionando um elemento:
+```
+Comando: $(‘a’)
+```
+Nesse exemplo buscamos todos os elemento’a’.
+
+![image](https://github.com/Fabricioperrone/Localizadores-css-e-xpath/assets/69866913/e6db7690-8b8b-4c32-be44-21489620e3e1)
+
+
