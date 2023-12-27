@@ -71,3 +71,40 @@ Retorna o valor do filtro de busca, ‘t-shirts’
 
 ![image](https://github.com/Fabricioperrone/Localizadores-css-e-xpath/assets/69866913/60338f49-1c15-4ae4-a77f-d54dfe3a62d8)
 
+```
+$('.homefeatured').text()
+```
+Retorna o texto
+
+![image](https://github.com/Fabricioperrone/Localizadores-css-e-xpath/assets/69866913/d117d296-adc9-4d67-8624-5df9f86e5770)
+
+```
+$('.blockbestsellers:first-child')
+```
+Retorna somente a primeira ocorrência daquele seletor _CSS_.
+
+```
+$('.blockbestsellers:first-child').click
+```
+Testa se o seletor funciona com .click()
+
+![image](https://github.com/Fabricioperrone/Localizadores-css-e-xpath/assets/69866913/ee2d67c5-a377-4b0b-ace1-d3fc0a7296b6)
+
+
+```
+$('.search_query').val('T-SHIRTS')
+```
+
+![image](https://github.com/Fabricioperrone/Localizadores-css-e-xpath/assets/69866913/52b702e9-0fdf-4f43-a03a-a0f23e57a236)
+
+Exemplo com _Xpath_:
+
+![image](https://github.com/Fabricioperrone/Localizadores-css-e-xpath/assets/69866913/d2757c63-90bb-4b9b-86fa-cdccdb84700c)
+
+//div
+
+![image](https://github.com/Fabricioperrone/Localizadores-css-e-xpath/assets/69866913/3f74fc64-1b05-49e3-94a7-a5dbf14e4940)
+
+
+
+
