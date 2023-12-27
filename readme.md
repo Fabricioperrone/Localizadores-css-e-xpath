@@ -135,3 +135,27 @@ document.evaluate('XPATH HERE', document, null, XPathResult.FIRST_ORDERED_NODE_T
 ```
 ![image](https://github.com/Fabricioperrone/Localizadores-css-e-xpath/assets/69866913/4440e6b4-8e89-414d-b268-ac4cab126979)
 
+# Principais maneiras de testar localizadores CTRL + F
+
+Testando seletor CSS:
+
+![image](https://github.com/Fabricioperrone/Localizadores-css-e-xpath/assets/69866913/fdf93049-52ae-40ab-b652-15c900b6090b)
+
+Testando ID:
+
+![image](https://github.com/Fabricioperrone/Localizadores-css-e-xpath/assets/69866913/80cbe9a1-b699-401c-a504-40e856f4460c)
+
+
+
+### Comandos mais utilizados:
+### Seleção de todos os conteúdos, todos os elementos:
+
+Comando:
+
+```
+$('*')
+```
+
+![image](https://github.com/Fabricioperrone/Localizadores-css-e-xpath/assets/69866913/28355f22-4749-47c3-8093-20e0d1ba8068)
+
+
