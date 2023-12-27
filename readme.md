@@ -67,7 +67,7 @@ Site com localizadores _CSS_ & _Xpath_ [Cheatsheet](https://devhints.io/xpath)
 ```
 CSS: $('.search_query').val()
 ``` 
-Retorna o valor do filtro de busca, ‘t-shirts’
+Retorna o valor do filtro de busca, 't-shirts'
 
 ![image](https://github.com/Fabricioperrone/Localizadores-css-e-xpath/assets/69866913/60338f49-1c15-4ae4-a77f-d54dfe3a62d8)
 
@@ -110,7 +110,7 @@ Exemplo com _Xpath_:
 
 Query Seletor:
 ```
-document.querySelectorAll(‘cssSelector’);
+document.querySelectorAll('cssSelector');
 ```
 Com uso de classe:
 
@@ -168,10 +168,75 @@ Comando:
 
 Selecionando um elemento:
 ```
-Comando: $(‘a’)
+Comando: $('a')
 ```
 Nesse exemplo buscamos todos os elemento’a’.
 
 ![image](https://github.com/Fabricioperrone/Localizadores-css-e-xpath/assets/69866913/e6db7690-8b8b-4c32-be44-21489620e3e1)
 
+Mesma consulta com Xpath:
+```
+Comando: $x('//a')
+```
 
+![image](https://github.com/Fabricioperrone/Localizadores-css-e-xpath/assets/69866913/301add3e-6a90-429c-babe-7208ff553d01)
+
+Consultando desde raiz com css: buscando elemento de uma determinada estrutura.
+
+Comando: 
+```
+html > head > title
+```
+
+![image](https://github.com/Fabricioperrone/Localizadores-css-e-xpath/assets/69866913/5a8cff13-eb43-4624-8e9f-97e45f289011)
+
+Mesma consulta com Xpath:
+```
+/ html / head / title
+```
+
+![image](https://github.com/Fabricioperrone/Localizadores-css-e-xpath/assets/69866913/baed9d2e-972d-4511-960a-99d19bb0bf7a)
+
+
+Fazendo consultas usando filtro:
+
+Vamos fazer uma consulta como se fosse um select em um banco de dados.
+
+Comando:
+```
+$(‘input[name=”search_query”]’)
+```
+
+O que o comando faz: busca um _input_ na tela, onde o _name_ é igual a "search_query".
+
+![image](https://github.com/Fabricioperrone/Localizadores-css-e-xpath/assets/69866913/e35428b0-0d35-469b-86a8-ef108cc3e08c)
+
+
+Agora vamos fazer o mesmo com _Xpath_:
+
+Comando:
+```
+$x('//input[@name="search_query"]')
+```
+![image](https://github.com/Fabricioperrone/Localizadores-css-e-xpath/assets/69866913/11585fe1-a476-43d2-984d-4a7143a50c6a)
+
+
+Comando: 
+```
+$('input[placeholder*="Sea"]')
+```
+![image](https://github.com/Fabricioperrone/Localizadores-css-e-xpath/assets/69866913/50e4ac96-ef88-40f1-bd73-41467e2fe51a)
+
+
+Usando _*_ ele pesquisa todos os atributos que tenha "_placeholder_" e o valor desse atributo contenha o "_Sea_".
+
+Vamos fazer a mesma consulta com _Xpath_:
+
+Usando "_contains_":
+
+Comando:
+```
+$x('//input[contains(@placeholder,"Sea")]')
+```
+
+![image](https://github.com/Fabricioperrone/Localizadores-css-e-xpath/assets/69866913/9544075b-0ae5-4629-a72a-d787a2bb4e83)
