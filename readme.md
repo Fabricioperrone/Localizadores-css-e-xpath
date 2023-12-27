@@ -317,3 +317,6 @@ $x(‘//*[contains(text(), “textoexemplo”]’)
 |                                      |                                      | //*[contains(@class, “search_query”)]            |
 | Elemento pelo seu texto              |                                      | //*[text()=”Come Visit Us”]                      |
 |                                      |                                      | //*[contains(text(), “Nort Carolina”)]           |
+
+
+Fonte: Iterasys Live com: [Danilo Arantes Freitas](https://www.youtube.com/watch?v=ZSAglCvKy9g&ab_channel=Iterasys)
